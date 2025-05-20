@@ -33,7 +33,6 @@ Create a `.env` file in the root directory with:
 ```
 DEBUG=True
 SECRET_KEY=your-secret-key
-DATABASE_URL=postgresql://user:password@localhost:5432/event_scheduler
 ```
 
 4. Run migrations:
