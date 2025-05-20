@@ -9,4 +9,5 @@ django-filter==23.5
 msgpack==1.0.7
 django-redis==5.4.0
 django-guardian==2.4.0 
-setuptools
+setuptools>=65.5.0
+
