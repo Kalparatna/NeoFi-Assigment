@@ -9,12 +9,14 @@ class EventAdmin(admin.ModelAdmin):
     readonly_fields = ('created_at', 'updated_at', 'version')
     date_hierarchy = 'start_time'
 
+
 @admin.register(EventPermission)
 class EventPermissionAdmin(admin.ModelAdmin):
     list_display = ('event', 'user', 'role', 'created_at', 'updated_at')
     list_filter = ('role', 'created_at')
     search_fields = ('event__title', 'user__username')
     readonly_fields = ('created_at', 'updated_at')
+
 
 @admin.register(EventVersion)
 class EventVersionAdmin(admin.ModelAdmin):
