@@ -6,7 +6,6 @@ class HasEventPermission(permissions.BasePermission):
         if not request.user.is_authenticated:
             return False
 
-        # Superusers can do anything
         if request.user.is_superuser:
             return True
 
