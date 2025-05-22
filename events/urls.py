@@ -6,7 +6,6 @@ from rest_framework_simplejwt.views import (
     TokenBlacklistView
 )
 from .views import EventViewSet
-
 router = DefaultRouter()
 router.register(r'events', EventViewSet, basename='event')
 
