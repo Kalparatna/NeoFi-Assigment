@@ -74,7 +74,6 @@ def parse_recurrence_pattern(pattern):
                 result[key] = value.split(',')
             else:
                 result[key] = value
-
     return result
 
 def generate_recurring_events(event, start_date, end_date):
