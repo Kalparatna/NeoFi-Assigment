@@ -46,7 +46,7 @@ class EventViewSet(viewsets.ModelViewSet):
                 metadata={'initial_version': True}
             )
 
-            # Detect conflicts
+
             detect_event_conflicts(event)
 
     def perform_update(self, serializer):
