@@ -77,7 +77,6 @@ class EventChangeLog(models.Model):
         DELETE = 'DELETE', _('Delete')
         SHARE = 'SHARE', _('Share')
         PERMISSION_CHANGE = 'PERMISSION_CHANGE', _('Permission Change')
-
     event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='changelog')
     version = models.ForeignKey(EventVersion, on_delete=models.CASCADE, related_name='changelog_entries')
     change_type = models.CharField(max_length=20, choices=ChangeType.choices)
