@@ -65,6 +65,7 @@ python manage.py test
 
 ## API Endpoints
 
+
 ### Authentication
 - POST /api/auth/register - Register a new user
 - POST /api/auth/login - Login and receive an authentication token
