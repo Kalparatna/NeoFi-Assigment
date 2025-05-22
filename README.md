@@ -2,6 +2,12 @@
 
 A RESTful API for event scheduling with collaborative editing features, built with Django and Django REST Framework.
 
+### API ENDPOINTS
+
+![Event Dashboard](images/1.png)
+![Event Creation](images/2.png)
+![Version Diff](images/3.png)
+
 ## Features
 
 - Secure authentication with JWT tokens
