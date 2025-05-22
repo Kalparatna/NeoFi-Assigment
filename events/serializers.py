@@ -98,7 +98,6 @@ class EventCreateSerializer(EventSerializer):
                 user_id=perm_data['user_id'],
                 role=perm_data.get('role', EventPermission.Role.VIEWER)
             )
-
         return event
 
 class EventUpdateSerializer(EventSerializer):
